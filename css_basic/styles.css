@@ -1,23 +1,71 @@
 body {
+    font-family: sans-serif;
+    width: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    color: #333;
+}
+header {
     display: flex;
     flex-direction: column;
+    font-size: large;
+    background-color: #34495e;
+    color: white;
+    }
+
+li a {
+   color: white;
+   font-size: 38ps;
 }
 
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    margin: 0;
+    padding: 0;
 }
 
 article {
-    width: 2;
+    margin: 0;
+    padding: 0 30px;
+    width: 67%;
     overflow-y: auto;
+    border: 1px solid gray;
 }
 
 aside {
-    width: 1;
+    position: relative;
+    right: 0;
+    justify-content: flex-end;
+    width: 33%;
     overflow-y: auto;
+    background-color: #e0f2f7;
+    border: 1px solid brown;
+    margin: 0;
+    padding: 0;
 }
 
+aside iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0 0;
+}
 
-    
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5px;
+    margin: 1px;
+    border-top: 5px solid #27ae60;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
