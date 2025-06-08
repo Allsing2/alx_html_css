@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.header-banner{
+    background-image: url(./css_images/Object.png);
+}
+
+a {
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+
+.presenter {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 40px;
+    gap: 30px;
+    line-height: 1.5;
+    background-color: rgb(204, 70, 225);
+    color: white;
+}
+
+.presenter > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.most_populars {
+    display: flex;
+}
+
+h2.popular_tutorials {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+h2.popular_tutorials>span {
+    color: rgb(204, 70, 225);
+}
+
+.Phillip-Massey {
+    scale: 30%;
+    padding: 50px;
+
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    scale: 50%;
+}
+
+
+.popular_tutorials {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.most_populars {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.most {
+  width: 23%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.Phillip-Massey {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.Phillip-Massey img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  color: #ffc107;
+  margin: 8px 0;
+}
+
+section.final {
+    background-color: rgb(14, 9, 37);
+    color: white;
+}
+
+
+.smiles {
+    display: flex;
+    justify-content: center;
+    background-color: ;
+}
+
+
+/* General styling for the FAQ section */
+.faq-section {
+    padding: 60px 20px; /* Top/bottom padding and some side padding */
+    background-color: #f8f8f8; /* Light background for the section */
+    text-align: center; /* Center the h2 title */
+}
+
+.faq-section h2 {
+    font-size: 2.8em; /* Larger font size for the main title */
+    color: #333;
+    margin-bottom: 50px; /* Space below the title */
+    font-weight: 700;
+}
+
+/* Main container for the two columns (CSS Grid here) */
+.faq-columns-container {
+    display: grid; /* Activates CSS Grid on this container */
+    grid-template-columns: 1fr 1fr; /* Creates two columns, each taking an equal fraction of space */
+    gap: 60px; /* Adds space between the two main columns */
+    max-width: 900px; /* Constrain the overall width of the FAQ content */
+    margin: 0 auto; /* Center the container on the page */
+    text-align: left; /* Reset text alignment for content inside columns */
+}
+
+/* Styling for each FAQ column (left and right) */
+.faq-column {
+    /* No specific grid properties needed here, as they are direct grid items */
+    /* You might add padding or background if you want visual separation per column */
+}
+
+/* Styling for each individual FAQ question/answer pair */
+.faq-item {
+    margin-bottom: 30px; /* Space between FAQ items within a column */
+}
+
+.faq-item h3 {
+    font-size: 1.2em; /* Font size for the question */
+    color: #000;
+    margin-bottom: 10px; /* Space below the question */
+    font-weight: 600;
+}
+
+.faq-item .faq-answer {
+    font-size: 0.95em; /* Font size for the answer text */
+    color: #555;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+    .faq-columns-container {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+        gap: 0; /* Remove gap between columns when stacked */
+    }
+
+    .faq-column {
+        padding: 0 15px; /* Add some horizontal padding to the stacked columns */
+    }
+
+    .faq-item {
+        margin-bottom: 40px; /* More space between items when stacked vertically */
+    }
+
+    .faq-section h2 {
+        font-size: 2.2em;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section {
+        padding: 40px 15px;
+    }
+    .faq-section h2 {
+        font-size: 1.8em;
+    }
+    .faq-item h3 {
+        font-size: 1.1em;
+    }
+    .faq-item .faq-answer {
+        font-size: 0.9em;
+    }
+}
